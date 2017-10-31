@@ -1,0 +1,69 @@
+[user]
+  name = Rocky Signavong
+  email = rsignavong@gmail.com
+[color]
+  ui = auto
+[core]
+  excludesfile = /Users/Rocky/.gitignore_global
+  longpaths = true      // pour les trÃ¨s longs noms de fichiers
+  filemode = false
+  autocrlf = input
+  pager = cat
+  whitespace = -trailing-space
+[alias]
+  cb = checkout -b
+  po = push origin
+  st = status
+  co = checkout
+  ph = push heroku
+  pg = push github
+  ug = pull github
+  pgm = push github master
+  phm = push heroku master
+  ugm = pull github master
+  aa = add -A
+  bl = branch
+  ci = commit
+  lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+  simulate = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset' @{u}..
+  cp = cherry-pick -x
+[diff]
+  mnemonicPrefix = true
+  wordRegex = .
+[fetch]
+  recurseSubmodules = on-demand
+[grep]
+  extendedRegexp = true
+[log]
+  abbrevCommit = true
+[merge]
+  conflictStyle = diff3
+  log = true
+  tool = meld
+[mergetool]
+  keepBackup = false
+  keepTemporaries = false
+  prompt = false
+[pull]
+  # This is GREATâ€¦ when you know what you're doing and are careful
+  # not to pull --no-rebase over a local line containing a true merge.
+  # rebase = true
+  # WARNING! This option, which does away with the one gotcha of
+  # auto-rebasing on pulls, is only available from 1.8.5 onwards.
+  rebase = preserve
+[push]
+  default = upstream
+[rerere]
+  # If, like me, you like rerere, decomment these
+  enabled = true
+  # if you want autoupdate, enable this one
+  autoupdate = true
+[status]
+  submoduleSummary = true
+  showUntrackedFiles = all
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[branch]
+  autosetuprebase = always
