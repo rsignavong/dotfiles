@@ -12,6 +12,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  ack
   bash-completion2
   bats
   battery
@@ -53,6 +54,7 @@ apps=(
 )
 
 brew install "${apps[@]}"
+# $(brew --prefix)/opt/fzf/install
 
 export DOTFILES_BREW_PREFIX_COREUTILS=`brew --prefix coreutils`
 set-config "DOTFILES_BREW_PREFIX_COREUTILS" "$DOTFILES_BREW_PREFIX_COREUTILS" "$DOTFILES_CACHE"
