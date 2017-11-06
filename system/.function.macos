@@ -6,7 +6,7 @@ manpdf() {
 
 # Dev
 
-d() {
+dev() {
   $DOTFILES_IDE ${1:-.}
   $DOTFILES_GIT_GUI ${1:-.}
 }

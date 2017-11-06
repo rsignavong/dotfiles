@@ -54,6 +54,10 @@ alias treed="tree -d"
 alias tree1="tree -d -L 1"
 alias tree2="tree -d -L 2"
 
+# fasd
+
+alias v='f -e vim' # quick opening files with vim
+
 # npm
 
 alias ni="npm install"
