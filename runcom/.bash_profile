@@ -65,3 +65,11 @@ shopt -s checkwinsize
 # tmux
 [[ $TERM != "screen" ]] && tmux
 
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/Rocky/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/Rocky/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/Rocky/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/Rocky/Downloads/google-cloud-sdk/completion.bash.inc'; fi

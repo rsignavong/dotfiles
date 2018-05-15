@@ -36,11 +36,13 @@ apps=(
   jq
   lynx
   mackup
+  macvim
   nano
   pandoc
   psgrep
   python
   reattach-to-user-namespace
+  ripgrep
   shellcheck
   ssh-copy-id
   tig
