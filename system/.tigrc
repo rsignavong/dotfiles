@@ -1,0 +1,10 @@
+# Interactive rebase
+bind main R !git rebase -i %(commit)^
+bind diff R !git rebase -i %(commit)^
+
+# Amend
+bind status a !?git commit --amend
+
+# Checkout file
+bind generic <Ctrl-F> !?git checkout %(commit) %(file)
+
