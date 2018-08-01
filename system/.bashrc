@@ -13,14 +13,15 @@ eval "$(rbenv init -)"
 export NVM_DIR="/Users/Rocky/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # tmux
 [[ $TERM != "screen" ]] && tmux
 
+# cargo
+[ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
 
+# Rust source
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
