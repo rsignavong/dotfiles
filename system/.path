@@ -16,6 +16,10 @@ prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
 prepend-path "$HOME/.rvm/bin"
 prepend-path "$HOME/.cargo/bin"
+prepend-path "$HOME/emsdk-portable"
+prepend-path "$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin"
+prepend-path "$HOME/emsdk-portable/node/8.9.1_64bit/bin"
+prepend-path "$HOME/emsdk-portable/emscripten/incoming"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755

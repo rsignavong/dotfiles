@@ -66,8 +66,6 @@ shopt -s checkwinsize
 [[ $TERM != "screen" ]] && tmux
 
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/Rocky/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/Rocky/Downloads/google-cloud-sdk/path.bash.inc'; fi
 
