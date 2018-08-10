@@ -53,6 +53,7 @@ apps=(
   vim --with-override-system-vi
   wget
   wifi-password
+  zsh
 )
 
 brew install "${apps[@]}"
