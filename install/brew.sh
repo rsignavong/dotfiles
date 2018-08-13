@@ -16,6 +16,7 @@ apps=(
   bash-completion2
   bats
   battery
+  cmake
   coreutils
   crystal-lang
   diff-so-fancy
