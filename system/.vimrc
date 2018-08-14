@@ -73,6 +73,16 @@ set incsearch
 set nojoinspaces
 set display+=lastline
 set clipboard=unnamed
+set directory^=$HOME/.vim/swap//
+set backupdir^=$HOME/.vim/backup//
+set timeoutlen=1000 ttimeoutlen=0
+
+" SAVE FILES with Ctr-s
+nnoremap <silent> <C-s> :update<CR>
+" to coninuously edit after saved the file
+" inoremap <silent> <C-s> <C-o>:update<CR>
+inoremap <silent> <C-s> <Esc>:update<CR>
+vnoremap <silent> <C-s> <C-c>:update<CR>gv
 
 " Minpac plugin manager
 packadd minpac
@@ -85,33 +95,86 @@ call minpac#add('vim-airline/vim-airline-themes')
 call minpac#add('edkolev/tmuxline.vim')
 call minpac#add('edkolev/promptline.vim')
 call minpac#add('scrooloose/nerdtree')
+call minpac#add('kshenoy/vim-signature')
 call minpac#add('junegunn/fzf')
 call minpac#add('mileszs/ack.vim')
+call minpac#add('ctrlpvim/ctrlp.vim')
+call minpac#add('jremmen/vim-ripgrep')
+call minpac#add('Townk/vim-autoclose')
+call minpac#add('easymotion/vim-easymotion')
+call minpac#add('haya14busa/incsearch.vim')
+call minpac#add('haya14busa/incsearch-easymotion.vim')
+call minpac#add('haya14busa/incsearch-fuzzy.vim')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('mhinz/vim-startify')
 
 " language plugin
-call minpac#add('vim-syntastic/syntastic')
-call minpac#add('sbdchd/neoformat')
-call minpac#add('elixir-editors/vim-elixir')
-call minpac#add('slashmili/alchemist.vim')
-call minpac#add('ElmCast/elm-vim')
-call minpac#add('StanAngeloff/php.vim')
+call minpac#add('Valloric/YouCompleteMe')
+call minpac#add('sheerun/vim-polyglot')
+call minpac#add('w0rp/ale')
+
+call minpac#add('reasonml-editor/vim-reason-plus')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
+" Startify Sessions
+" :SLoad    load a session
+" :SSave    save a session
+" :SDelete  delete a session
+" :SClose   close current session
+
 " NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd p | ene | endif
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
+set wildignore+=*/.git/*,*/tmp/*,*.swp
+
+" Easymotion
+" f{char}{char} to move to {char}{char}
+nmap f <Plug>(easymotion-overwin-f2)
+
+" Incsearch + Easymotion
+" / find exact word and move cursor to first match
+map / <Plug>(incsearch-easymotion-/)
+
+" Incsearch + Easymotion + Fuzzy
+" ? find fuzzy word and move cursor to better match
+function! s:config_easyfuzzymotion(...) abort
+  return extend(copy({
+    \   'converters': [incsearch#config#fuzzyword#converter()],
+    \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
+    \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+    \   'is_expr': 0,
+    \   'is_stay': 0
+    \ }), get(a:, 1, {}))
+endfunction
+
+noremap <silent><expr> ? incsearch#go(<SID>config_easyfuzzymotion())
 
 " Fzf
 set rtp+=/usr/local/opt/fzf
 
 " Ag
-let g:ackprg = 'ag --vimgrep'
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+let g:ackprg = 'rg --vimgrep --no-heading'
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
 
 " Tmux line
 let g:tmuxline_preset = 'full'
@@ -125,3 +188,11 @@ let g:promptline_preset = 'full'
 colorscheme atom
 let g:airline_theme='deus'
 let g:airline_powerline_fonts=1
+
+" ALE
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+
