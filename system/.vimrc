@@ -63,6 +63,7 @@ endif
 filetype plugin indent on
 syntax on
 
+set encoding=utf8
 set number
 set laststatus=2
 set modelines=5
@@ -76,6 +77,10 @@ set clipboard=unnamed
 set directory^=$HOME/.vim/swap//
 set backupdir^=$HOME/.vim/backup//
 set timeoutlen=1000 ttimeoutlen=0
+
+" Split Bar
+set fillchars=vert:│ 
+autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NONE
 
 " SAVE FILES with Ctr-s
 nnoremap <silent> <C-s> :update<CR>
@@ -100,7 +105,7 @@ call minpac#add('junegunn/fzf')
 call minpac#add('mileszs/ack.vim')
 call minpac#add('ctrlpvim/ctrlp.vim')
 call minpac#add('jremmen/vim-ripgrep')
-call minpac#add('Townk/vim-autoclose')
+call minpac#add('spf13/vim-autoclose')
 call minpac#add('easymotion/vim-easymotion')
 call minpac#add('haya14busa/incsearch.vim')
 call minpac#add('haya14busa/incsearch-easymotion.vim')
