@@ -83,11 +83,15 @@ set fillchars=vert:│
 autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NONE
 
 " SAVE FILES with Ctr-s
-nnoremap <silent> <C-s> :update<CR>
 " to coninuously edit after saved the file
 " inoremap <silent> <C-s> <C-o>:update<CR>
-inoremap <silent> <C-s> <Esc>:update<CR>
-vnoremap <silent> <C-s> <C-c>:update<CR>gv
+" nnoremap <silent> <C-s> :update<CR>
+" inoremap <silent> <C-s> <Esc>:update<CR>
+" vnoremap <silent> <C-s> <C-c>:update<CR>gv
+" Escape Insert mode
+inoremap ii <Esc>
+nnoremap <silent> ss :update<CR>
+nnoremap Q :qa<CR>
 
 " Minpac plugin manager
 packadd minpac
@@ -128,6 +132,8 @@ command! PackClean call minpac#clean()
 " :SSave    save a session
 " :SDelete  delete a session
 " :SClose   close current session
+" AutoSave session on quit
+let g:startify_session_persistence = 1
 
 " NERDTree
 " autocmd StdinReadPre * let s:std_in=1
