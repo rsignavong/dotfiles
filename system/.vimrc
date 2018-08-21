@@ -89,7 +89,7 @@ autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NON
 " inoremap <silent> <C-s> <Esc>:update<CR>
 " vnoremap <silent> <C-s> <C-c>:update<CR>gv
 " Escape Insert mode
-inoremap ii <Esc>
+inoremap jj <Esc>
 nnoremap <silent> ss :update<CR>
 nnoremap Q :qa<CR>
 
@@ -104,6 +104,7 @@ call minpac#add('vim-airline/vim-airline-themes')
 call minpac#add('edkolev/tmuxline.vim')
 call minpac#add('edkolev/promptline.vim')
 call minpac#add('scrooloose/nerdtree')
+call minpac#add('webdevel/tabulous')
 call minpac#add('kshenoy/vim-signature')
 call minpac#add('junegunn/fzf')
 call minpac#add('mileszs/ack.vim')
