@@ -74,8 +74,8 @@ set incsearch
 set nojoinspaces
 set display+=lastline
 set clipboard=unnamed
-set directory^=$HOME/.vim/swap//
-set backupdir^=$HOME/.vim/backup//
+set directory=$HOME/.vim/swap//
+set backupdir=$HOME/.vim/backup//
 set timeoutlen=1000 ttimeoutlen=0
 
 " Split Bar
@@ -90,6 +90,8 @@ autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NON
 " vnoremap <silent> <C-s> <C-c>:update<CR>gv
 " Escape Insert mode
 inoremap jj <Esc>
+inoremap jss <Esc>:update<CR>
+nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
 nnoremap Q :qa<CR>
 
@@ -104,6 +106,7 @@ call minpac#add('vim-airline/vim-airline-themes')
 call minpac#add('edkolev/tmuxline.vim')
 call minpac#add('edkolev/promptline.vim')
 call minpac#add('scrooloose/nerdtree')
+call minpac#add('Xuyuanp/nerdtree-git-plugin')
 call minpac#add('webdevel/tabulous')
 call minpac#add('kshenoy/vim-signature')
 call minpac#add('junegunn/fzf')
@@ -142,11 +145,25 @@ let g:startify_session_persistence = 1
 " autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
+let NERDTreeWinSize = 50
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeShowBookmarks = 0
+" "let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeMapOpenSplit = 's'
+let NERDTreeMapPreviewSplit = 'gs'
+let NERDTreeMapOpenVSplit = 'v'
+let NERDTreeMapPreviewVSplit = 'gv'
+
+" NERDTree Git Plugin
+let g:NERDTreeShowIgnoredStatus = 0
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 'r'
 if executable('rg')
   set grepprg=rg\ --color=never
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
