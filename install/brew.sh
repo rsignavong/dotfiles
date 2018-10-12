@@ -14,6 +14,7 @@ brew upgrade
 apps=(
   ack
   bash-completion2
+  bat
   bats
   battery
   cmake
