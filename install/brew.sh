@@ -10,6 +10,7 @@ brew update
 brew upgrade
 
 # Install packages
+# rargs must be installed with cargo
 
 apps=(
   ack
@@ -24,6 +25,8 @@ apps=(
   dockutil
   erlang
   elixir
+  exa
+  fd
   ffmpeg
   fasd
   fzf
@@ -47,6 +50,7 @@ apps=(
   ripgrep
   shellcheck
   ssh-copy-id
+  sbdchd/skim/skim
   tig
   tmux
   the_silver_searcher
@@ -55,6 +59,7 @@ apps=(
   vim --with-override-system-vi
   wget
   wifi-password
+  xsv
   zsh
 )
 

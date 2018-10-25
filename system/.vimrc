@@ -93,7 +93,8 @@ inoremap jj <Esc>
 inoremap jss <Esc>:update<CR>
 nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
-nnoremap Q :qa<CR>
+nnoremap Q :q<CR>
+nnoremap QQ :qa<CR>
 
 " Minpac plugin manager
 packadd minpac
@@ -110,6 +111,7 @@ call minpac#add('Xuyuanp/nerdtree-git-plugin')
 call minpac#add('webdevel/tabulous')
 call minpac#add('kshenoy/vim-signature')
 call minpac#add('junegunn/fzf')
+call minpac#add('lotabout/skim.vim')
 call minpac#add('mileszs/ack.vim')
 call minpac#add('ctrlpvim/ctrlp.vim')
 call minpac#add('jremmen/vim-ripgrep')
@@ -162,7 +164,7 @@ let g:NERDTreeShowIgnoredStatus = 0
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
 if executable('rg')
   set grepprg=rg\ --color=never
@@ -194,7 +196,10 @@ endfunction
 noremap <silent><expr> ? incsearch#go(<SID>config_easyfuzzymotion())
 
 " Fzf
-set rtp+=/usr/local/opt/fzf
+" set rtp+=/usr/local/opt/fzf
+
+" Skim
+set rtp+=~/.skim
 
 " Ag
 if executable("rg")
