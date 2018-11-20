@@ -25,6 +25,7 @@ apps=(
   dockutil
   erlang
   elixir
+  elm
   exa
   fd
   ffmpeg

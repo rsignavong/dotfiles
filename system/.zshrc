@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/emsdk-portable:$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk-portable/node/8.9.1_64bit/bin:$HOME/emsdk-portable/emscripten/incoming:$PATH
+export PATH=$HOME/Library/Python/2.7/bin:$HOME/emsdk-portable:$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk-portable/node/8.9.1_64bit/bin:$HOME/emsdk-portable/emscripten/incoming:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/Users/rockysignavong/.oh-my-zsh"
