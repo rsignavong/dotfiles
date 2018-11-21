@@ -128,6 +128,9 @@ call minpac#add('Valloric/YouCompleteMe')
 call minpac#add('sheerun/vim-polyglot')
 call minpac#add('w0rp/ale')
 
+" Elm
+call minpac#add('ElmCast/elm-vim')
+
 call minpac#add('reasonml-editor/vim-reason-plus')
 
 command! PackUpdate call minpac#update()
