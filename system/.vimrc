@@ -128,9 +128,6 @@ call minpac#add('Valloric/YouCompleteMe')
 call minpac#add('sheerun/vim-polyglot')
 call minpac#add('w0rp/ale')
 
-" Elm
-call minpac#add('ElmCast/elm-vim')
-
 call minpac#add('reasonml-editor/vim-reason-plus')
 
 command! PackUpdate call minpac#update()
@@ -233,3 +230,7 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 
+" YCM
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}

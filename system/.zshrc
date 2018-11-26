@@ -69,9 +69,11 @@ plugins=(
   docker
   encode64
   fasd
+  fast-syntax-highlighting
   git
   httpie
   history
+  history-search-multi-word
   jsontools
   node
   npm
@@ -90,6 +92,8 @@ plugins=(
   urltools
   web-search
   yarn
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
