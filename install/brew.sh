@@ -43,6 +43,7 @@ apps=(
   mackup
   macvim
   nano
+  nvm
   pandoc
   psgrep
   python

@@ -148,8 +148,10 @@ alias sd="sk --ansi -c 'rg --color=always --line-number \"{}\"'"
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # NVM
-export NVM_DIR=$HOME/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR="$HOME/.nvm"
+export NVM_DIR=$(brew --prefix nvm)
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource $NVM_DIR/nvm.sh
 
 # Display Quote on new shell
 quote

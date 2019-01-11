@@ -79,7 +79,7 @@ set backupdir=$HOME/.vim/backup//
 set timeoutlen=1000 ttimeoutlen=0
 
 " Split Bar
-set fillchars=vert:│ 
+set fillchars=vert:│
 autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NONE
 
 " SAVE FILES with Ctr-s
@@ -95,6 +95,10 @@ nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
 nnoremap Q :q<CR>
 nnoremap QQ :qa<CR>
+
+" Enable completion where available.
+" This setting must be set before ALE is loaded.
+" let g:ale_completion_enabled = 1
 
 " Minpac plugin manager
 packadd minpac
@@ -129,6 +133,7 @@ call minpac#add('sheerun/vim-polyglot')
 call minpac#add('w0rp/ale')
 
 call minpac#add('reasonml-editor/vim-reason-plus')
+call minpac#add('rust-lang/rust.vim')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -227,10 +232,14 @@ let g:airline_powerline_fonts=1
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier', 'eslint'],
 \}
 
 " YCM
 let g:ycm_semantic_triggers = {
      \ 'elm' : ['.'],
      \}
+
+" Rust
+let g:rustfmt_autosave = 1
