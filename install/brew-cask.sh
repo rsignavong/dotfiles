@@ -4,16 +4,20 @@ if ! is-macos -o ! is-executable brew; then
 fi
 
 brew tap caskroom/cask
+brew tap caskroom/fonts
 
 # Install packages
 
 apps=(
+  aerial
   alfred
   dash2
   dropbox
   firefox
   firefox-nightly
   flux
+  font-fira-code
+  font-hack-nerd-font
   glimmerblocker
   google-chrome
   google-chrome-canary

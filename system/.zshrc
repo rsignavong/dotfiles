@@ -3,7 +3,7 @@
 export PATH=$HOME/Library/Python/2.7/bin:$HOME/emsdk-portable:$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk-portable/node/8.9.1_64bit/bin:$HOME/emsdk-portable/emscripten/incoming:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/Users/rockysignavong/.oh-my-zsh"
+export ZSH="/Users/rockysignavong/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -103,7 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -136,10 +137,14 @@ alias vim="stty stop '' -ixoff ; vim"
 # `Frozing' tty, so after any command terminal settings will be restored
 ttyctl -f
 
-# exa
-alias l="exa"
-alias ll="exa -l"
-alias la="exa -la"
+# bindkey -v
+
+# lsd
+alias ls="lsd"
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 
 # skim
 alias sd="sk --ansi -c 'rg --color=always --line-number \"{}\"'"
@@ -147,14 +152,28 @@ alias sd="sk --ansi -c 'rg --color=always --line-number \"{}\"'"
 # TMUX
 if [ "$TMUX" = "" ]; then tmux; fi
 
+# ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
+# Rust
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Ditto npm registry
+# export DITTO_NPM_REGISTRY_URL=http://40.89.164.73/repository/npm/
+# export DITTO_NPM_TOKEN=c2J4LWRldjpkMVRUMA==
+
+
 # NVM
 # export NVM_DIR="$HOME/.nvm"
 export NVM_DIR=$(brew --prefix nvm)
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource $NVM_DIR/nvm.sh
+npm config set prefix $NVM_DIR/versions/node/v12.13.0
 
 # Display Quote on new shell
 quote
 
-# opam configuration
-test -r /Users/rockysignavong/.opam/opam-init/init.zsh && . /Users/rockysignavong/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+source /Users/rockysignavong/Library/Preferences/org.dystroy.broot/launcher/bash/br

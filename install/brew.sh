@@ -21,6 +21,7 @@ apps=(
   cmake
   coreutils
   crystal-lang
+  ctags
   diff-so-fancy
   dockutil
   erlang
@@ -28,18 +29,24 @@ apps=(
   exa
   fd
   ffmpeg
+  ffsend
   fasd
   fzf
+  fontforge
   gifsicle
   git
   git-extras
   gnu-sed --with-default-names
   grep --with-default-names
+  gstreamer
+  heroku/brew/heroku
   hub
   httpie
+  hyperfine
   imagemagick
   jq
   lynx
+  lsd
   mackup
   macvim
   nano
@@ -49,9 +56,12 @@ apps=(
   python
   reattach-to-user-namespace
   ripgrep
+  sbt
+  scala
   shellcheck
   ssh-copy-id
   sbdchd/skim/skim
+  starship
   tig
   tmux
   the_silver_searcher
