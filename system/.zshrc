@@ -161,12 +161,6 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# Ditto npm registry
-# export DITTO_NPM_REGISTRY_URL=http://40.89.164.73/repository/npm/
-# export DITTO_NPM_TOKEN=c2J4LWRldjpkMVRUMA==
-
-
-# NVM
 # export NVM_DIR="$HOME/.nvm"
 export NVM_DIR=$(brew --prefix nvm)
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
