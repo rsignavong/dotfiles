@@ -68,7 +68,6 @@ plugins=(
   brew
   docker
   encode64
-  fasd
   fast-syntax-highlighting
   git
   httpie
@@ -97,6 +96,25 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zplug/init.zsh
+
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "zdharma/fast-syntax-highlighting", from:oh-my-zsh
+zplug "zdharma/history-search-multi-word", from:oh-my-zsh
+zplug "zsh-users/zsh-autosuggestions", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting", from:oh-my-zsh
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load --verbose
+
 
 # User configuration
 
@@ -119,6 +137,11 @@ export LC_ALL=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Reloads the history whenever you use it
+setopt share_history
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -139,6 +162,9 @@ ttyctl -f
 
 # bindkey -v
 
+# zoxide fast cd
+eval "$(zoxide init zsh)"
+
 # lsd
 alias ls="lsd"
 alias l='ls -l'
@@ -155,6 +181,9 @@ if [ "$TMUX" = "" ]; then tmux; fi
 # ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
+# fix mac_listener for Elixir
+export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
+
 # Rust
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
@@ -165,9 +194,13 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export NVM_DIR=$(brew --prefix nvm)
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource $NVM_DIR/nvm.sh
-npm config set prefix $NVM_DIR/versions/node/v12.13.0
+npm config set prefix $NVM_DIR/versions/node/v12.14.1
 
 # Display Quote on new shell
-quote
+# quote
+motivate
 
 source /Users/rockysignavong/Library/Preferences/org.dystroy.broot/launcher/bash/br
+
+eval "$(starship init zsh)"
+fpath+=${ZDOTDIR:-~}/.zsh_functions

@@ -14,6 +14,7 @@ brew upgrade
 
 apps=(
   ack
+  ansible
   bash-completion2
   bat
   bats
@@ -35,6 +36,7 @@ apps=(
   fontforge
   gifsicle
   git
+  git-absorb
   git-extras
   gnu-sed --with-default-names
   grep --with-default-names
@@ -45,12 +47,16 @@ apps=(
   hyperfine
   imagemagick
   jq
+  kubernetes-cli
+  llvm
   lynx
   lsd
   mackup
   macvim
+  minikube
   nano
   nvm
+  packer
   pandoc
   psgrep
   python
@@ -59,9 +65,11 @@ apps=(
   sbt
   scala
   shellcheck
+  sk
   ssh-copy-id
   sbdchd/skim/skim
   starship
+  terraform
   tig
   tmux
   the_silver_searcher
@@ -71,6 +79,7 @@ apps=(
   wget
   wifi-password
   xsv
+  zplug
   zsh
 )
 

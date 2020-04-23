@@ -1,0 +1,10 @@
+run_in_tmux = true
+
+[commands]
+"Tmux plugins" = "~/.tmux/plugins/tpm/bin/update_plugins all"
+"Oh My Zsh" = "upgrade_oh_my_zsh"
+"Zsh Plugins" = "cd ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting && git pull"
+"Brew" = "sh ~/.brew"
+"Rust" = "rustup update"
+"Cargo" = "cargo install-update -a"
+

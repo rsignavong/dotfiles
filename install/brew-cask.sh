@@ -10,6 +10,7 @@ brew tap caskroom/fonts
 
 apps=(
   aerial
+  alacritty
   alfred
   dash2
   dropbox

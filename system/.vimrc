@@ -129,7 +129,8 @@ packadd minpac
 call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type':'opt'})
-call minpac#add('flazz/vim-colorschemes')
+" call minpac#add('flazz/vim-colorschemes')
+call minpac#add('morhetz/gruvbox')
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-airline/vim-airline-themes')
 call minpac#add('edkolev/tmuxline.vim')
@@ -158,6 +159,7 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('mhinz/vim-startify')
 call minpac#add('majutsushi/tagbar')
 call minpac#add('Valloric/ListToggle')
+call minpac#add('ahw/vim-hooks')
 
 " call minpac#add('autozimu/LanguageClient-neovim')
 call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
@@ -170,7 +172,7 @@ call minpac#add('sheerun/vim-polyglot')
 call minpac#add('iamcco/markdown-preview.vim')
 call minpac#add('lambdatoast/elm.vim')
 call minpac#add('rust-lang/rust.vim')
-call minpac#add('derekwyatt/vim-scala')
+" call minpac#add('derekwyatt/vim-scala')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -273,7 +275,13 @@ let g:promptline_theme = 'airline_visual'
 let g:promptline_preset = 'full'
 
 " Vim Design
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 colorscheme gruvbox
+set background=dark
 let g:airline_theme='deus'
 let g:airline_powerline_fonts=1
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -524,6 +532,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
 
 " Rust
 " let g:rustfmt_autosave = 1
