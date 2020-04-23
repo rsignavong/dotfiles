@@ -14,6 +14,3 @@ git_repos = [
 "Cargo" = "cargo install-update -a"
 "Rust Analyzer" = "cd ~/LanguageServers/rust-analyzer && cargo xtask install --server"
 "Elixir LS" = "cd ~/LanguageServers/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release -o release"
-"NPM" = "npm i -g npm"
-"Elm" = "npm i -g elm @elm-tooling/elm-language-server elm-analyse elm-format elm-review elm-test"
-"MF bootstrap" = "npm i -g mf-bootstrap"
