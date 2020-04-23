@@ -1,10 +1,19 @@
-run_in_tmux = true
+git_repos = [
+    "~/.skim",
+    "~/LanguageServers/elixir-ls",
+    "~/LanguageServers/rust-analyzer"
+]
 
 [commands]
 "Tmux plugins" = "~/.tmux/plugins/tpm/bin/update_plugins all"
 "Oh My Zsh" = "upgrade_oh_my_zsh"
-"Zsh Plugins" = "cd ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting && git pull"
+"Zsh Plugins" = "zplug update"
 "Brew" = "sh ~/.brew"
+"Vim Packs" = "pack update"
 "Rust" = "rustup update"
 "Cargo" = "cargo install-update -a"
-
+"Rust Analyzer" = "cd ~/LanguageServers/rust-analyzer && cargo xtask install --server"
+"Elixir LS" = "cd ~/LanguageServers/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release -o release"
+"NPM" = "npm i -g npm"
+"Elm" = "npm i -g elm @elm-tooling/elm-language-server elm-analyse elm-format elm-review elm-test"
+"MF bootstrap" = "npm i -g mf-bootstrap"
