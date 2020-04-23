@@ -4,6 +4,8 @@ git_repos = [
     "~/LanguageServers/rust-analyzer"
 ]
 
+cleanup = true
+
 [commands]
 "Tmux plugins" = "~/.tmux/plugins/tpm/bin/update_plugins all"
 "Oh My Zsh" = "upgrade_oh_my_zsh"
