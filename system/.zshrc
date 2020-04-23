@@ -68,11 +68,9 @@ plugins=(
   brew
   docker
   encode64
-  fast-syntax-highlighting
   git
   httpie
   history
-  history-search-multi-word
   jsontools
   node
   npm
@@ -91,21 +89,19 @@ plugins=(
   urltools
   web-search
   yarn
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zplug/init.zsh
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "zdharma/fast-syntax-highlighting", from:oh-my-zsh
-zplug "zdharma/history-search-multi-word", from:oh-my-zsh
-zplug "zsh-users/zsh-autosuggestions", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", from:oh-my-zsh
+zplug "zdharma/fast-syntax-highlighting"
+zplug "zdharma/history-search-multi-word"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting"
 
 # Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
+if ! zplug check; then
     printf "Install? [y/N]: "
     if read -q; then
         echo; zplug install
@@ -113,7 +109,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
 
 
 # User configuration

@@ -25,6 +25,7 @@ apps=(
   hammerspoon
   kaleidoscope
   macdown
+  maralla/pack
   opera
   screenflow
   slack

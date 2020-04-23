@@ -56,6 +56,7 @@ apps=(
   minikube
   nano
   nvm
+  pack
   packer
   pandoc
   psgrep
@@ -79,7 +80,6 @@ apps=(
   wget
   wifi-password
   xsv
-  zplug
   zsh
 )
 
