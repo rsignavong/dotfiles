@@ -7,9 +7,6 @@ git_repos = [
 cleanup = true
 
 [commands]
-"Tmux plugins" = "~/.tmux/plugins/tpm/bin/update_plugins all"
-"Zsh Plugins" = "zplug update"
-"Brew" = "sh ~/.brew"
 "Vim Packs" = "pack update"
 "Rust" = "rustup update"
 "Cargo" = "cargo install-update -a"
