@@ -64,7 +64,7 @@ apps=(
   reattach-to-user-namespace
   ripgrep
   sbt
-  scala
+  sccache
   shellcheck
   sk
   ssh-copy-id
