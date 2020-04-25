@@ -4,6 +4,8 @@ git_repos = [
     "~/LanguageServers/rust-analyzer"
 ]
 
+disable = ["system"]
+
 cleanup = true
 
 [commands]
