@@ -1,5 +1,5 @@
 [build]
-rustc-wrapper = "~/Library/Caches/Mozilla.sccache"
+rustc-wrapper = "/usr/local/bin/sccache"
 
 [net]
 git-fetch-with-cli = true
