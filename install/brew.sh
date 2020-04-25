@@ -25,6 +25,7 @@ apps=(
   ctags
   diff-so-fancy
   dockutil
+  dotenv-linter/tap/dotenv-linter
   erlang
   elixir
   exa
