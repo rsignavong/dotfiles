@@ -171,6 +171,9 @@ alias lt='ls --tree'
 # skim
 alias sd="sk --ansi -c 'rg --color=always --line-number \"{}\"'"
 
+# Neovim
+alias nv="nvim"
+
 # TMUX
 if [ "$TMUX" = "" ]; then tmux; fi
 
