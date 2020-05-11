@@ -177,6 +177,9 @@ if [ "$TMUX" = "" ]; then tmux; fi
 # ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
+# export XDG_CONFIG_HOME
+export XDG_CONFIG_HOME=$HOME/.config
+
 # fix mac_listener for Elixir
 export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 
