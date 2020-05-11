@@ -31,6 +31,5 @@
         "elmTestPath": "elm-test"
       }
     }
-  },
-  "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer"
+  }
 }
