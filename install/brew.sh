@@ -56,6 +56,7 @@ apps=(
   macvim
   minikube
   nano
+  neovim
   nvm
   pack
   packer
