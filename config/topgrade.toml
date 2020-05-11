@@ -1,7 +1,6 @@
 git_repos = [
     "~/.skim",
-    "~/LanguageServers/elixir-ls",
-    "~/LanguageServers/rust-analyzer"
+    "~/LanguageServers/elixir-ls"
 ]
 
 disable = ["system"]
@@ -12,5 +11,4 @@ cleanup = true
 "Vim Packs" = "pack update"
 "Rust" = "rustup update"
 "Cargo" = "cargo install-update -a"
-"Rust Analyzer" = "cd ~/LanguageServers/rust-analyzer && cargo xtask install --server"
 "Elixir LS" = "cd ~/LanguageServers/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release -o release"

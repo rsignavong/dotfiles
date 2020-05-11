@@ -1,0 +1,36 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "elixir",
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+    "rust",
+    "yaml"
+  ],
+  "diagnostic.errorSign": "✘",
+  "diagnostic.infoSign": "i",
+  "languageserver": {
+    "elixirLS": {
+      "command": "~/LanguageServers/elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "runtime": "node",
+        "elmPath": "elm",
+        "elmFormatPath": "elm-format",
+        "elmTestPath": "elm-test"
+      }
+    }
+  },
+  "rust-analyzer.serverPath": "~/.cargo/bin/rust-analyzer"
+}
