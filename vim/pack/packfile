@@ -136,11 +136,6 @@
 - 
   category: default
   local: false
-  name: "tpope/vim-endwise"
-  opt: false
-- 
-  category: default
-  local: false
   name: "tpope/vim-fugitive"
   opt: false
 - 
