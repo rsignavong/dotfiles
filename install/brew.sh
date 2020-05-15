@@ -57,6 +57,7 @@ apps=(
   minikube
   nano
   neovim
+  nushell
   nvm
   pack
   packer
