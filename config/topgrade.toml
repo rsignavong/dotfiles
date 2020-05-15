@@ -10,5 +10,4 @@ cleanup = true
 [commands]
 "Vim Packs" = "pack update"
 "Rust" = "rustup update"
-"Cargo" = "cargo install-update -a"
 "Elixir LS" = "cd ~/LanguageServers/elixir-ls && mix deps.get && mix compile && mix elixir_ls.release -o release"
