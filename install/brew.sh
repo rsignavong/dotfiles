@@ -77,6 +77,7 @@ apps=(
   tig
   tmux
   the_silver_searcher
+  tokei
   tree
   unar
   vim --with-override-system-vi
