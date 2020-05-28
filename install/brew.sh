@@ -38,6 +38,7 @@ apps=(
   gifsicle
   git
   git-absorb
+  git-delta
   git-extras
   gnu-sed --with-default-names
   grep --with-default-names
@@ -48,6 +49,7 @@ apps=(
   hyperfine
   imagemagick
   jq
+  just
   kubernetes-cli
   llvm
   lynx
