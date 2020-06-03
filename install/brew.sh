@@ -29,6 +29,7 @@ apps=(
   erlang
   elixir
   exa
+  extrawurst/tap/gitui
   fd
   ffmpeg
   ffsend
