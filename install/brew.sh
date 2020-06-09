@@ -6,6 +6,7 @@ fi
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap Goles/battery
+brew tap cjbassi/ytop
 brew update
 brew upgrade
 
@@ -87,6 +88,7 @@ apps=(
   wget
   wifi-password
   xsv
+  ytop
   zsh
 )
 
