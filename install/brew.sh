@@ -89,6 +89,7 @@ apps=(
   wifi-password
   xsv
   ytop
+  zenith
   zsh
 )
 
