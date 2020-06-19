@@ -206,3 +206,8 @@ source /Users/rockysignavong/Library/Preferences/org.dystroy.broot/launcher/bash
 
 eval "$(starship init zsh)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# kube / kafka
+# sudo ifconfig en0 alias 192.168.27.27
+ulimit -u 4176
+ulimit -n 10000
