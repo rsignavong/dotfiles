@@ -1,6 +1,7 @@
 git_repos = [
     "~/.skim",
     "~/LanguageServers/elixir-ls"
+    "~/bin/motislide"
 ]
 
 disable = ["system"]
