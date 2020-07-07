@@ -1,4 +1,5 @@
-git_repos = [
+[git]
+repos = [
     "~/.skim",
     "~/LanguageServers/elixir-ls",
     "~/bin/motislide"
