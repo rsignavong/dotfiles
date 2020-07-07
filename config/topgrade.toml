@@ -1,6 +1,6 @@
 git_repos = [
     "~/.skim",
-    "~/LanguageServers/elixir-ls"
+    "~/LanguageServers/elixir-ls",
     "~/bin/motislide"
 ]
 
