@@ -25,6 +25,7 @@ apps=(
   crystal-lang
   ctags
   diff-so-fancy
+  datawire/blackbird/telepresence
   dockutil
   dotenv-linter/tap/dotenv-linter
   erlang
@@ -52,6 +53,8 @@ apps=(
   imagemagick
   jq
   just
+  kafkacat
+  kubectx
   kubernetes-cli
   llvm
   lynx

@@ -27,6 +27,7 @@ apps=(
   macdown
   maralla/pack
   opera
+  osxfuse
   screenflow
   slack
   sourcetree
