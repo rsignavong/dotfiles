@@ -1,4 +1,4 @@
-disable = ["system"]
+disable = ["system", "vim"]
 cleanup = true
 
 [git]
