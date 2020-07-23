@@ -73,7 +73,6 @@ apps=(
   python
   reattach-to-user-namespace
   ripgrep
-  rocksdb
   sbt
   sccache
   shellcheck
