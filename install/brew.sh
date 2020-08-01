@@ -69,6 +69,7 @@ apps=(
   pack
   packer
   pandoc
+  procs
   psgrep
   python
   reattach-to-user-namespace
