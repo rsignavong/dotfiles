@@ -18,7 +18,7 @@
     "coc-scssmodules": ">=0.2.0",
     "coc-snippets": ">=2.1.28",
     "coc-stylelint": ">=1.1.0",
-    "coc-stylelintplus": ">=1.0.5",
+    "coc-stylelintplus": ">=1.1.0",
     "coc-svg": ">=0.0.13",
     "coc-tailwindcss": ">=0.6.0",
     "coc-tslint": ">=1.0.17",
