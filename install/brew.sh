@@ -16,6 +16,7 @@ brew upgrade
 apps=(
   ack
   ansible
+  bandwhich
   bash-completion2
   bat
   bats
