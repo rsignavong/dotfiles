@@ -1,1 +1,1 @@
-let g:NERDTreeShowIgnoredStatus = 0
+let g:NERDTreeGitStatusShowIgnored = 0
