@@ -3,6 +3,13 @@
   email = rsignavong@gmail.com
 [color]
   ui = auto
+  ; pager = delta
+; [delta]
+  ;   plus-color = "#012800"
+  ;   minus-color = "#340001"
+  ;   syntax-theme = Monokai Extended
+; [interactive]
+  ;   diffFilter = delta --color-only
 [core]
   excludesfile = /Users/Rocky/.gitignore_global
   longpaths = true      // pour les trÃ¨s longs noms de fichiers
