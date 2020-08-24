@@ -7,6 +7,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap Goles/battery
 brew tap cjbassi/ytop
+brew tap clementtsang/bottom
+brew tap brandonskerritt/rustscan
 brew update
 brew upgrade
 
@@ -21,6 +23,7 @@ apps=(
   bat
   bats
   battery
+  bottom
   cmake
   coreutils
   crystal-lang
@@ -75,6 +78,7 @@ apps=(
   python
   reattach-to-user-namespace
   ripgrep
+  rustscan
   sbt
   sccache
   shellcheck
@@ -95,6 +99,7 @@ apps=(
   xsv
   ytop
   zenith
+  zoxide
   zsh
 )
 
