@@ -94,6 +94,7 @@ apps=(
   tokei
   tree
   unar
+  unison
   vim --with-override-system-vi
   wget
   wifi-password
