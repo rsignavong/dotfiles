@@ -188,8 +188,8 @@ export XDG_CONFIG_HOME=$HOME/.config
 export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 
 # Rust
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
-export RUST_SRC="$(rustc --print sysroot)/lib/rustlib/src/rust/library"
+# export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+# export RUST_SRC="$(rustc --print sysroot)/lib/rustlib/src/rust/library"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
