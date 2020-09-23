@@ -26,7 +26,7 @@
     "coc-tsserver": ">=1.5.7",
     "coc-utils": ">=0.0.13",
     "coc-webpack": ">=1.4.0",
-    "coc-yaml": ">=1.0.5",
+    "coc-yaml": ">=1.1.0",
     "coc-yank": ">=1.1.5"
   }
 }
