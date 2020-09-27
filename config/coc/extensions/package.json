@@ -16,7 +16,7 @@
     "coc-prettier": ">=1.1.17",
     "coc-rust-analyzer": ">=0.8.2",
     "coc-scssmodules": ">=0.2.0",
-    "coc-snippets": ">=2.2.0",
+    "coc-snippets": ">=2.2.1",
     "coc-stylelint": ">=1.1.0",
     "coc-stylelintplus": ">=1.2.0",
     "coc-svg": ">=0.0.13",
@@ -27,6 +27,6 @@
     "coc-utils": ">=0.0.13",
     "coc-webpack": ">=1.4.0",
     "coc-yaml": ">=1.1.0",
-    "coc-yank": ">=1.1.5"
+    "coc-yank": ">=1.1.6"
   }
 }
