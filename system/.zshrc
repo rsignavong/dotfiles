@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/Library/Python/2.7/bin:$HOME/emsdk-portable:$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk-portable/node/8.9.1_64bit/bin:$HOME/emsdk-portable/emscripten/incoming:$PATH
+export PATH=$HOME/Library/Python/2.7/bin:$HOME/emsdk-portable:$HOME/emsdk-portable/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk-portable/emscripten/incoming:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/rockysignavong/.oh-my-zsh"
@@ -194,11 +194,10 @@ export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# export NVM_DIR="$HOME/.nvm"
-export NVM_DIR=$(brew --prefix nvm)
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource $NVM_DIR/nvm.sh
-npm config set prefix $NVM_DIR/versions/node/v12.18.1
+# Node
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 ###-begin-npm-completion-###
 #
