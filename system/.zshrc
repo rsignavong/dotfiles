@@ -83,8 +83,8 @@ plugins=(
   rand-quote
   sudo
   tig
-  tmux
-  tmuxinator
+  # tmux
+  # tmuxinator
   urltools
   web-search
   yarn
@@ -175,7 +175,7 @@ alias sd="sk --ansi -c 'rg --color=always --line-number \"{}\"'"
 alias v="nvim"
 
 # TMUX
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 # ctags
 alias ctags="`brew --prefix`/bin/ctags"
