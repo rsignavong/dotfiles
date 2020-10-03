@@ -270,8 +270,8 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # kube / kafka
 # sudo ifconfig en0 alias 192.168.27.27
-ulimit -u 4176
-ulimit -n 10000
+# ulimit -u 4176
+# ulimit -n 10000
 
 # tab multiplexer configuration: https://github.com/austinjones/tab-rs/
 source /Users/rockysignavong/.tab/completion/zsh-history.zsh
