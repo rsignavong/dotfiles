@@ -17,8 +17,9 @@ brew upgrade
 
 apps=(
   ack
-  autozimu/homebrew-formulas/unison-fsmonitor
   ansible
+  austinjones/taps/tab
+  autozimu/homebrew-formulas/unison-fsmonitor
   bandwhich
   bash-completion2
   bat
