@@ -1,8 +1,14 @@
+format = "${custom.tab}$all"
+
 [custom]
 
+
 [custom.tab]
+description = "The current tab in the tab terminal multiplexer"
 command = "tab --starship"
 when = "tab --starship"
+format = "[$output]($style) "
+shell = ["sh"]
 style = "bold blue"
 
 
