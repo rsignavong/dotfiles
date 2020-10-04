@@ -98,7 +98,6 @@ nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
 nnoremap W :q<CR>
 nnoremap QQ :qa<CR>
-nnoremap <C-o> <C-w><C-w>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
@@ -113,9 +112,11 @@ vmap <C-s> [egv
 vmap <C-d> ]egv
 
 " Buffer switching
-map hh <C-^>
+map [] <C-^>
 map <C-]> :bn<cr>
 map <C-[> :bp<cr>
+nnoremap <C-x> :bp\|bd #<cr>
+nnoremap <C-o> <C-w><C-w>
 
 " hybrid line mode
 set number relativenumber
