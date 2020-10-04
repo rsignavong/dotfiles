@@ -91,6 +91,11 @@
 - 
   category: default
   local: false
+  name: "lukelbd/vim-tabline"
+  opt: false
+- 
+  category: default
+  local: false
   name: majutsushi/tagbar
   opt: false
 - 
@@ -162,9 +167,4 @@
   category: default
   local: false
   name: "vim-airline/vim-airline-themes"
-  opt: false
-- 
-  category: default
-  local: false
-  name: webdevel/tabulous
   opt: false
