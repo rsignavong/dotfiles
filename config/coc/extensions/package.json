@@ -23,10 +23,10 @@
     "coc-tailwindcss": ">=0.7.0",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
-    "coc-tsserver": ">=1.5.7",
+    "coc-tsserver": ">=1.5.8",
     "coc-utils": ">=0.0.13",
     "coc-webpack": ">=1.4.0",
     "coc-yaml": ">=1.1.0",
-    "coc-yank": ">=1.1.7"
+    "coc-yank": ">=1.1.8"
   }
 }
