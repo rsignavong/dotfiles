@@ -112,7 +112,7 @@ vmap <C-s> [egv
 vmap <C-d> ]egv
 
 " Buffer switching
-map [] <C-^>
+map gh <C-^>
 map <C-]> :bn<cr>
 map <C-[> :bp<cr>
 nnoremap <C-x> :bp\|bd #<cr>
