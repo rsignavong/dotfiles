@@ -69,6 +69,7 @@ apps=(
   lsd
   mackup
   macvim
+  michaeleisel/zld/zld
   minikube
   nano
   neovim
