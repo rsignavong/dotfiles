@@ -116,6 +116,7 @@ map gh <C-^>
 map <C-]> :bn<cr>
 map <C-[> :bp<cr>
 nnoremap <C-x> :bp\|bd #<cr>
+nnoremap <C-X> :bp\|bd! #<cr>
 nnoremap <C-o> <C-w><C-w>
 
 " hybrid line mode
