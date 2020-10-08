@@ -51,7 +51,6 @@ apps=(
   git-extras
   gitui
   gnu-sed --with-default-names
-  go
   grep --with-default-names
   gstreamer
   heroku/brew/heroku
