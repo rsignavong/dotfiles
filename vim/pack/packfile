@@ -61,6 +61,11 @@
 - 
   category: default
   local: false
+  name: hkupty/nvimux
+  opt: false
+- 
+  category: default
+  local: false
   name: "iamcco/markdown-preview.vim"
   opt: false
 - 
