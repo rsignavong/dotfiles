@@ -274,6 +274,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # ulimit -n 10000
 
 # tab multiplexer configuration: https://github.com/austinjones/tab-rs/
-source /Users/rockysignavong/.tab/completion/zsh-history.zsh
+# source /Users/rockysignavong/.tab/completion/zsh-history.zsh
 # end tab configuration
 
