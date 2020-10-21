@@ -15,7 +15,7 @@
     "coc-marketplace": ">=1.7.0",
     "coc-prettier": ">=1.1.17",
     "coc-rust-analyzer": ">=0.10.1",
-    "coc-scssmodules": ">=0.2.0",
+    "coc-scssmodules": ">=0.2.1",
     "coc-snippets": ">=2.2.1",
     "coc-stylelint": ">=1.2.0",
     "coc-stylelintplus": ">=1.2.0",
