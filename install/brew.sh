@@ -83,7 +83,6 @@ apps=(
   reattach-to-user-namespace
   ripgrep
   rustscan
-  sbt
   sccache
   shellcheck
   sk
