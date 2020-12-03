@@ -77,10 +77,12 @@ apps=(
   pack
   packer
   pandoc
+  poppler
   procs
   psgrep
   python
   reattach-to-user-namespace
+  rga
   ripgrep
   rustscan
   sccache
@@ -90,6 +92,7 @@ apps=(
   sbdchd/skim/skim
   starship
   terraform
+  tesseract
   tig
   tmux
   the_silver_searcher
