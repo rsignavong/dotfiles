@@ -1,6 +1,10 @@
 [build]
 rustc-wrapper = "/usr/local/bin/sccache"
 
+[expand]
+color = "always"
+theme = "gruvbox"
+
 [net]
 git-fetch-with-cli = true
 
