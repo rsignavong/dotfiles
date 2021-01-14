@@ -30,6 +30,7 @@ apps=(
   coreutils
   crystal-lang
   ctags
+  denisidoro/tools/abra
   diff-so-fancy
   datawire/blackbird/telepresence
   dockutil
