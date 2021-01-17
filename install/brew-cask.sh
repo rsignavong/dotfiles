@@ -24,6 +24,7 @@ apps=(
   google-chrome-canary
   hammerspoon
   kaleidoscope
+  kitty
   macdown
   maralla/pack
   opera
