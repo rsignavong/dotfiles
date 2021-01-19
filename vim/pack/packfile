@@ -173,3 +173,8 @@
   local: false
   name: "vim-airline/vim-airline-themes"
   opt: false
+- 
+  category: default
+  local: false
+  name: "vimlab/split-term.vim"
+  opt: false
