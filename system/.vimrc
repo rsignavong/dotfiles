@@ -102,6 +102,7 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Terminal
 tnoremap jj <C-\><C-n>
+tnoremap <C-w> <C-\><C-n><C-w>
 
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 hi CursorLine   cterm=NONE ctermbg=darkgray ctermfg=NONE "guibg=lightgrey guifg=white
