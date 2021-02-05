@@ -59,6 +59,7 @@ apps=(
   httpie
   hyperfine
   imagemagick
+  interactive-rebase-tool
   jq
   just
   kafkacat
