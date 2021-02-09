@@ -74,3 +74,5 @@
   smudge = git media smudge %f
 [branch]
   autosetuprebase = always
+[sequence]
+	editor = interactive-rebase-tool
