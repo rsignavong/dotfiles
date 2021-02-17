@@ -10,7 +10,8 @@
     "typescript",
     "typescript.tsx",
     "typescriptreact",
-    "rust"
+    "rust",
+    "yaml"
   ],
   "diagnostic.errorSign": "✘",
   "diagnostic.infoSign": "i",
