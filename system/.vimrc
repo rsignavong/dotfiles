@@ -85,6 +85,8 @@ set timeoutlen=1000 ttimeoutlen=0
 set fillchars=vert:│
 autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=magenta ctermbg=NONE
 
+" Disable Ex Mode
+map Q <Nop>
 " SAVE FILES with Ctr-s
 " to coninuously edit after saved the file
 " inoremap <silent> <C-s> <C-o>:update<CR>
@@ -97,7 +99,7 @@ inoremap jss <Esc>:update<CR>
 nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
 nnoremap W :q<CR>
-nnoremap <C-q> :qa<CR>
+nnoremap QQ :qa<CR>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Terminal
