@@ -97,7 +97,7 @@ inoremap jss <Esc>:update<CR>
 nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
 nnoremap W :q<CR>
-nnoremap QQ :qa<CR>
+nnoremap <C-q> :qa<CR>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Terminal
