@@ -6,6 +6,7 @@
     "javascript.jsx",
     "javascriptreact",
     "json",
+    "sql",
     "toml",
     "typescript",
     "typescript.tsx",
@@ -32,6 +33,10 @@
         "elmTestPath": "elm-test"
       }
     }
+  },
+  "sql.database": "postgresql",
+  "sql.formatOptions": {
+    "language": "postgresql"
   },
   "rust-analyzer.cargo.loadOutDirsFromCheck": true,
   "rust-analyzer.procMacro.enable": true
