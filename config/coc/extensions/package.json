@@ -22,7 +22,7 @@
     "coc-stylelintplus": ">=1.4.0",
     "coc-svg": ">=0.0.13",
     "coc-tailwindcss": ">=0.7.0",
-    "coc-toml": ">=1.0.3",
+    "coc-toml": ">=1.0.4",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.2.0",
     "coc-tsserver": ">=1.6.8",
