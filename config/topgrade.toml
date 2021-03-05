@@ -1,12 +1,8 @@
-disable = ["system", "vim", "go"]
+disable = ["system", "vim"]
 cleanup = true
 
 [git]
-repos = [
-    "~/.skim",
-    "~/LanguageServers/elixir-ls",
-    "~/bin/motislide"
-]
+repos = ["~/.skim", "~/LanguageServers/elixir-ls", "~/bin/motislide"]
 
 [commands]
 "Vim Packs" = "pack update"
