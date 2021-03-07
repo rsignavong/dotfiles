@@ -6,7 +6,7 @@
     "coc-elixir": ">=0.6.4",
     "coc-emmet": ">=1.1.6",
     "coc-eslint": ">=1.4.5",
-    "coc-git": ">=2.2.2",
+    "coc-git": ">=2.3.0",
     "coc-gitignore": ">=0.0.4",
     "coc-highlight": ">=1.2.7",
     "coc-html": ">=1.4.1",

@@ -11,3 +11,5 @@ bind status a !?git commit --amend
 # Checkout file
 bind generic <Ctrl-F> !?git checkout %(commit) %(file)
 
+# Delete file
+bind status D ?@rm %(file)
