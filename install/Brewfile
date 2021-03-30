@@ -8,7 +8,6 @@ install autojump
 install automake
 install cairo
 install cmake
-install elasticsearch
 install elixir
 install elm
 install erlang
@@ -34,8 +33,6 @@ install imagemagick
 install influxdb
 install jemalloc
 install jpeg
-install kafka
-install kibana
 install libcroco
 install libevent
 install libffi
@@ -52,7 +49,6 @@ install libvterm
 install libyaml
 install logstash
 install md5sha1sum
-install mongodb
 install msgpack
 install nettle
 install openssl
@@ -64,12 +60,10 @@ install pcre2
 install perl
 install pixman
 install pkg-config
-install postgresql
 install python
 install python3
 install rbenv
 install readline
-install redis
 install ruby
 install ruby-build
 install shared-mime-info
@@ -86,4 +80,3 @@ install unixodbc
 install vim
 install wxmac
 install xz
-install zookeeper
