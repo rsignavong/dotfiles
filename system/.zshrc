@@ -189,6 +189,7 @@ export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 # Rust
 # export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # export RUST_SRC="$(rustc --print sysroot)/lib/rustlib/src/rust/library"
+export RUSTFLAGS="-L/Applications/Postgres.app/Contents/Versions/latest/lib"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
