@@ -186,6 +186,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 # fix mac_listener for Elixir
 export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 
+# SSH
+export SSH_AUTH_SOCK=/Users/rockysignavong/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
 # Rust
 # export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # export RUST_SRC="$(rustc --print sysroot)/lib/rustlib/src/rust/library"

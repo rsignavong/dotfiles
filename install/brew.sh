@@ -73,6 +73,7 @@ apps=(
   michaeleisel/zld/zld
   minikube
   nano
+  navi
   neovim
   nushell
   nvm
@@ -88,6 +89,7 @@ apps=(
   ripgrep
   rustscan
   sccache
+  secretive
   shellcheck
   sk
   ssh-copy-id
