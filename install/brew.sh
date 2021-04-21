@@ -32,7 +32,7 @@ apps=(
   ctags
   denisidoro/tools/abra
   diff-so-fancy
-  datawire/blackbird/telepresence
+  # datawire/blackbird/telepresence
   dockutil
   dotenv-linter/tap/dotenv-linter
   erlang
