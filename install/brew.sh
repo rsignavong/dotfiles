@@ -38,7 +38,6 @@ apps=(
   erlang
   elixir
   exa
-  extrawurst/tap/gitui
   fd
   ffmpeg
   ffsend
@@ -50,7 +49,6 @@ apps=(
   git-absorb
   git-delta
   git-extras
-  gitui
   gnu-sed --with-default-names
   grep --with-default-names
   gstreamer
