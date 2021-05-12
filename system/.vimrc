@@ -96,8 +96,10 @@ map Q <Nop>
 " Escape Insert mode
 inoremap jj <Esc>
 inoremap jss <Esc>:update<CR>
+inoremap jsf <Esc>:noa w<CR>
 nnoremap s <Nop>
 nnoremap <silent> ss :update<CR>
+nnoremap <silent> sf :noa w<CR>
 nnoremap W :q<CR>
 nnoremap QQ :qa<CR>
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
