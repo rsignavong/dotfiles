@@ -281,3 +281,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # source /Users/rockysignavong/.tab/completion/zsh-history.zsh
 # end tab configuration
 
+export PATH="/usr/local/opt/erlang@23/bin:$PATH"
