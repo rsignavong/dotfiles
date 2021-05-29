@@ -280,5 +280,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # tab multiplexer configuration: https://github.com/austinjones/tab-rs/
 # source /Users/rockysignavong/.tab/completion/zsh-history.zsh
 # end tab configuration
-
-export PATH="/usr/local/opt/erlang@23/bin:$PATH"
