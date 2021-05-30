@@ -189,6 +189,9 @@ export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
 # SSH
 export SSH_AUTH_SOCK=/Users/rockysignavong/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
+# ASDF
+. /opt/homebrew/opt/asdf/asdf.sh
+
 # Rust
 # export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # export RUST_SRC="$(rustc --print sysroot)/lib/rustlib/src/rust/library"
@@ -262,6 +265,12 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+# Erlang
+# export PATH="/usr/local/opt/erlang@23/bin:$PATH"
+
+# Elixir
+# test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # Display Quote on new shell
 # quote
