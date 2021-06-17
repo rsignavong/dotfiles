@@ -14,7 +14,7 @@
     "coc-lists": ">=1.4.2",
     "coc-marketplace": ">=1.8.1",
     "coc-prettier": ">=1.1.23",
-    "coc-pyright": ">=1.1.148",
+    "coc-pyright": ">=1.1.150",
     "coc-rust-analyzer": ">=0.46.1",
     "coc-scssmodules": ">=0.2.2",
     "coc-snippets": ">=2.4.2",
