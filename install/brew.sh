@@ -99,6 +99,7 @@ apps=(
   tmux
   the_silver_searcher
   tokei
+  trash
   tree
   unar
   unison
