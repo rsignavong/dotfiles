@@ -14,7 +14,7 @@
     "coc-lists": ">=1.4.2",
     "coc-marketplace": ">=1.8.1",
     "coc-prettier": ">=1.1.24",
-    "coc-pyright": ">=1.1.154",
+    "coc-pyright": ">=1.1.155",
     "coc-rust-analyzer": ">=0.47.0",
     "coc-scssmodules": ">=0.2.2",
     "coc-snippets": ">=2.4.3",
@@ -28,7 +28,7 @@
     "coc-tslint-plugin": ">=1.2.0",
     "coc-tsserver": ">=1.8.1",
     "coc-webpack": ">=1.5.0",
-    "coc-yaml": ">=1.4.0",
+    "coc-yaml": ">=1.4.1",
     "coc-yank": ">=1.2.0"
   }
 }
