@@ -6,7 +6,7 @@
     "coc-elixir": ">=0.7.0",
     "coc-emmet": ">=1.1.6",
     "coc-eslint": ">=1.4.5",
-    "coc-git": ">=2.3.5",
+    "coc-git": ">=2.4.0",
     "coc-gitignore": ">=0.0.4",
     "coc-highlight": ">=1.2.8",
     "coc-html": ">=1.4.1",
@@ -28,7 +28,7 @@
     "coc-tslint-plugin": ">=1.2.0",
     "coc-tsserver": ">=1.8.1",
     "coc-webpack": ">=1.5.0",
-    "coc-yaml": ">=1.4.1",
+    "coc-yaml": ">=1.4.2",
     "coc-yank": ">=1.2.0"
   }
 }
